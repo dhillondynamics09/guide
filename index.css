@@ -1,0 +1,147 @@
+/* Global styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c42c2e;
+  color: white;
+}
+
+h1, h2, h3 {
+  color: #fff;
+}
+
+button {
+  cursor: pointer;
+  background-color: #8b1a1c;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a32a2c;
+}
+
+input[type="number"], input[type="file"], textarea {
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: none;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 150px;
+  background: rgba(0,0,0,0.3);
+  color: white;
+}
+
+label {
+  display: inline-block;
+  margin-top: 1rem;
+  cursor: pointer;
+  color: white;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-list {
+  flex: 1 1 200px;
+  min-width: 200px;
+  background: #8b1a1c;
+  padding: 1rem;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.page-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-list li {
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 0.3rem;
+  background: #a32a2c;
+  cursor: pointer;
+  user-select: none;
+}
+
+.page-list li.selected {
+  background: #c42c2e;
+  font-weight: bold;
+}
+
+.page-editor {
+  flex: 3 1 600px;
+  min-width: 300px;
+  background: #8b1a1c;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 400px;
+  box-sizing: border-box;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.timer, .collage-board {
+  margin-top: 1rem;
+  background: #8b1a1c;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.collage-photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.collage-photos img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  position: relative;
+}
+
+.collage-photos button {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: rgba(0,0,0,0.6);
+  border-radius: 50%;
+  padding: 0 6px;
+  font-weight: bold;
+  line-height: 1;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
